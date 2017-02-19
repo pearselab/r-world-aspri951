@@ -1,0 +1,1 @@
+#How to deal with non-continous functions? Split functions CAN be modelled using the heavyside function/linear transform... possible in code?
