@@ -8,3 +8,4 @@ Description: A model that takes user input values for plant survival, reproducti
 License: Some license
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1

@@ -8,6 +8,7 @@
 #' @param names A vector of length n storing the names of the n plants in the ecosystem. If no names are given, they will be automatically assigned.
 #' @return A list containing all survival, reproduction, and survival values for the user's plant ecosystem.
 #'
+#' @export
 setup.plants <- function(reproduce, survive, compete.matrix, names = NULL){
   if(is.null(names) == TRUE){
     names <- letters[1:length(reproduce)]
@@ -108,6 +109,7 @@ seed.plants <- function(terrain, setup.plants, number.plants){
 #' @param numb.plants.per.sp A vector of length n storing the values for the initial population size desired for each of n plant species.
 #' @param timesteps A numeric value representing the number of timesteps over which the user wishes to simulate their ecosystem.
 
+#' @export
 run.plant.ecosystem <- function(terrain, setup.plants, numb.plants.per.sp, timesteps){
   plant.array <- array(dim = c(nrow(terrain), ncol(terrain), timesteps + 1))
   #Creates plant array to put stuff into.
