@@ -282,3 +282,17 @@ reproduction <- function(plant.matrix, setup.plants){
   }
   return(repro.plant.matrix)
 }
+
+#coexistence test: guessing if probability of survival/competition balances lack of probability of reproduction (or any other balanced combination), coexistence will be possible
+
+terrain <- matrix(nrow = 9, ncol = 9, sample(27, 27))
+terrain[which(terrain < 10)] <- NA
+survive <- c(0.5, 0.9)
+reproduce <- c(0.9, 0.5)
+comp.matrix <- matrix(nrow = 2, ncol= 2, c(0.5, 0.5))
+names <- c("super", "sucky")
+survive <- setNames(survive, names)
+setup.plants <- setup.plants(reproduce, survive, comp.matrix, names)
+numb.plants.per.sp <- c(20, 20)
+
+run.plant.ecosystem(terrain, setup.plants, numb.plants.per.sp, 5)
