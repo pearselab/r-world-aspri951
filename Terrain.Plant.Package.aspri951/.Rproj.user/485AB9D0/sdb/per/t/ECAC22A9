@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: Plant.Package.aspri951\nType: Package\nTitle: Plant Community Model\nVersion: 0.1.0\nAuthor: aspri951\nMaintainer: The package maintainer <yourself@somewhere.net>\nDescription: A model that takes user input values for plant survival, reproduction, and competition probabilities, as well as initial plant population sizes, and simulates the location and abundance of plant species in an ecosystem through time. \nLicense: Some license\nEncoding: UTF-8\nLazyData: true\n",
+    "created" : 1489716505833.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2327080677",
+    "id" : "ECAC22A9",
+    "lastKnownWriteTime" : 1489764865,
+    "last_content_update" : 1489764865187,
+    "path" : "~/GitHub/r-world-aspri951/Terrain.Plant.Package.aspri951/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
